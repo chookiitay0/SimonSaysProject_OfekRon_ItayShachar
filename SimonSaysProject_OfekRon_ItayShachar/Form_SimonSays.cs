@@ -22,30 +22,17 @@ namespace SimonSaysProject_OfekRon_ItayShachar
         }
 
         private const int arrayLength = 4;
-        private Image[] array_Colors = new Image[arrayLength];
+        private int[] array_Colors = new int[arrayLength];
 
         private int count = 0;
 
         private void SetImagesArray()
         {
-            array_Colors[0] = Resources.Green;
-            array_Colors[1] = Resources.Red;
-
-            array_Colors[2] = Resources.Blue;
-            array_Colors[3] = Resources.Yellow;
+            array_Colors[0] = 1;
+            array_Colors[1] = 2;
+            array_Colors[2] = 3;
+            array_Colors[3] = 4;
         }
-        
-        // private static int RandomColor(Image[] array_Colors)
-        // {
-            int green = 1;
-            int red = 2;
-            int blue = 3;
-            int yellow = 4;
-
-
-        // }
-
-
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -64,29 +51,63 @@ namespace SimonSaysProject_OfekRon_ItayShachar
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-            switch (count >= 4)
+            switch (array_Colors[count])
             {
                 case 1:
-                    count++;
-                    greenPictureBox.Visible = !greenPictureBox.Visible;
+                    greenPictureBox.Visible = false;
+                    timer2.Start();
                     break;
                 case 2:
-                    count++;
-                    RedPictureBox.Visible = !RedPictureBox.Visible;
+                    RedPictureBox.Visible = false;
+                    timer2.Start();
                     break;
                 case 3:
-                    count++;
-                    BluePictureBox.Visible = !BluePictureBox.Visible;
+                    BluePictureBox.Visible = false;
+                    timer2.Start();
                     break;
                 case 4:
-                    count++;
-                    YellowPictureBox.Visible = !YellowPictureBox.Visible;
+                    YellowPictureBox.Visible = false;
+                    timer2.Start();
+                    break;
+                default:
+                    break;
+
+            }
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            switch (count)
+            {
+                case 1:
+                    greenPictureBox.Visible = true;
+                    break;
+                case 2:
+                    RedPictureBox.Visible = true;
+                    break;
+                case 3:
+                    BluePictureBox.Visible = true;
+                    break;
+                case 4:
+                    YellowPictureBox.Visible = true;
                     break;
                 default:
                     break;
             }
 
+            count++;
+            timer2.Stop();
+        }
+
+        private void greenPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void color_Click(object sender, EventArgs e)
+        {
+            PictureBox pictureBox = sender as PictureBox;
 
 
 

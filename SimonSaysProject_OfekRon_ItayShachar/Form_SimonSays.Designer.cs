@@ -37,6 +37,7 @@
             this.circle = new System.Windows.Forms.PictureBox();
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.YellowPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BluePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedPictureBox)).BeginInit();
@@ -85,6 +86,7 @@
             this.greenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenPictureBox.TabIndex = 1;
             this.greenPictureBox.TabStop = false;
+            this.greenPictureBox.Click += new System.EventHandler(this.greenPictureBox_Click);
             // 
             // circle
             // 
@@ -111,6 +113,11 @@
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 500;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form_SimonSays
             // 
@@ -143,6 +150,7 @@
         private System.Windows.Forms.PictureBox YellowPictureBox;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
