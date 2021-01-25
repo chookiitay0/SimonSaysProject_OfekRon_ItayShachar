@@ -30,83 +30,77 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_SimonSays));
-            this.YellowPictureBox = new System.Windows.Forms.PictureBox();
-            this.BluePictureBox = new System.Windows.Forms.PictureBox();
-            this.RedPictureBox = new System.Windows.Forms.PictureBox();
-            this.greenPictureBox = new System.Windows.Forms.PictureBox();
-            this.circle = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox0 = new System.Windows.Forms.PictureBox();
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.YellowPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BluePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RedPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circle)).BeginInit();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox0)).BeginInit();
             this.SuspendLayout();
             // 
-            // YellowPictureBox
+            // pictureBox2
             // 
-            this.YellowPictureBox.Image = global::SimonSaysProject_OfekRon_ItayShachar.Properties.Resources.Yellow;
-            this.YellowPictureBox.Location = new System.Drawing.Point(116, 262);
-            this.YellowPictureBox.Name = "YellowPictureBox";
-            this.YellowPictureBox.Size = new System.Drawing.Size(220, 200);
-            this.YellowPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.YellowPictureBox.TabIndex = 4;
-            this.YellowPictureBox.TabStop = false;
+            this.pictureBox2.Image = global::SimonSaysProject_OfekRon_ItayShachar.Properties.Resources.Yellow;
+            this.pictureBox2.Location = new System.Drawing.Point(136, 251);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(210, 200);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox_Click);
             // 
-            // BluePictureBox
+            // pictureBox3
             // 
-            this.BluePictureBox.Image = global::SimonSaysProject_OfekRon_ItayShachar.Properties.Resources.Blue;
-            this.BluePictureBox.Location = new System.Drawing.Point(352, 262);
-            this.BluePictureBox.Name = "BluePictureBox";
-            this.BluePictureBox.Size = new System.Drawing.Size(220, 200);
-            this.BluePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BluePictureBox.TabIndex = 3;
-            this.BluePictureBox.TabStop = false;
-            this.BluePictureBox.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox3.Image = global::SimonSaysProject_OfekRon_ItayShachar.Properties.Resources.Blue;
+            this.pictureBox3.Location = new System.Drawing.Point(352, 251);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(220, 200);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox_Click);
             // 
-            // RedPictureBox
+            // pictureBox1
             // 
-            this.RedPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("RedPictureBox.Image")));
-            this.RedPictureBox.Location = new System.Drawing.Point(352, 45);
-            this.RedPictureBox.Name = "RedPictureBox";
-            this.RedPictureBox.Size = new System.Drawing.Size(220, 200);
-            this.RedPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.RedPictureBox.TabIndex = 2;
-            this.RedPictureBox.TabStop = false;
-            this.RedPictureBox.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(352, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox_Click);
             // 
-            // greenPictureBox
+            // pictureBox0
             // 
-            this.greenPictureBox.Image = global::SimonSaysProject_OfekRon_ItayShachar.Properties.Resources.Green;
-            this.greenPictureBox.Location = new System.Drawing.Point(116, 45);
-            this.greenPictureBox.Name = "greenPictureBox";
-            this.greenPictureBox.Size = new System.Drawing.Size(220, 200);
-            this.greenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.greenPictureBox.TabIndex = 1;
-            this.greenPictureBox.TabStop = false;
-            this.greenPictureBox.Click += new System.EventHandler(this.greenPictureBox_Click);
-            // 
-            // circle
-            // 
-            this.circle.Image = global::SimonSaysProject_OfekRon_ItayShachar.Properties.Resources.Circle;
-            this.circle.Location = new System.Drawing.Point(-2, 0);
-            this.circle.Name = "circle";
-            this.circle.Size = new System.Drawing.Size(689, 499);
-            this.circle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.circle.TabIndex = 0;
-            this.circle.TabStop = false;
+            this.pictureBox0.Image = global::SimonSaysProject_OfekRon_ItayShachar.Properties.Resources.Green;
+            this.pictureBox0.Location = new System.Drawing.Point(126, 45);
+            this.pictureBox0.Name = "pictureBox0";
+            this.pictureBox0.Size = new System.Drawing.Size(220, 200);
+            this.pictureBox0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox0.TabIndex = 1;
+            this.pictureBox0.TabStop = false;
+            this.pictureBox0.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // startButton
             // 
+            this.startButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.startButton.FlatAppearance.BorderSize = 0;
             this.startButton.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.startButton.ForeColor = System.Drawing.Color.White;
             this.startButton.Location = new System.Drawing.Point(207, 505);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(280, 49);
+            this.startButton.Size = new System.Drawing.Size(286, 61);
             this.startButton.TabIndex = 5;
             this.startButton.Text = "Start Playing!";
-            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // timer1
@@ -116,41 +110,53 @@
             // 
             // timer2
             // 
-            this.timer2.Interval = 500;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.Location = new System.Drawing.Point(190, 464);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(286, 38);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Stage ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form_SimonSays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 598);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.YellowPictureBox);
-            this.Controls.Add(this.BluePictureBox);
-            this.Controls.Add(this.RedPictureBox);
-            this.Controls.Add(this.greenPictureBox);
-            this.Controls.Add(this.circle);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox0);
             this.Name = "Form_SimonSays";
             this.Text = "Simon Says";
-            ((System.ComponentModel.ISupportInitialize)(this.YellowPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BluePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RedPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox0)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox circle;
-        private System.Windows.Forms.PictureBox greenPictureBox;
-        private System.Windows.Forms.PictureBox RedPictureBox;
-        private System.Windows.Forms.PictureBox BluePictureBox;
-        private System.Windows.Forms.PictureBox YellowPictureBox;
+        private System.Windows.Forms.PictureBox pictureBox0;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Label label1;
     }
 }
 
