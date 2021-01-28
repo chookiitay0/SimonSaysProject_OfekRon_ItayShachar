@@ -38,7 +38,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.stage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,6 +93,7 @@
             // 
             this.startButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.startButton.FlatAppearance.BorderSize = 0;
+            this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startButton.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.startButton.ForeColor = System.Drawing.Color.White;
             this.startButton.Location = new System.Drawing.Point(207, 505);
@@ -116,22 +117,22 @@
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // label1
+            // stage
             // 
-            this.label1.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(190, 464);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 38);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Stage ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.stage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stage.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.stage.Location = new System.Drawing.Point(207, 464);
+            this.stage.Name = "stage";
+            this.stage.Size = new System.Drawing.Size(286, 38);
+            this.stage.TabIndex = 6;
+            this.stage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form_SimonSays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 598);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(681, 596);
+            this.Controls.Add(this.stage);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
@@ -156,7 +157,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label stage;
     }
 }
 

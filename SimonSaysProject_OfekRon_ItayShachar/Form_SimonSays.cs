@@ -31,7 +31,7 @@ namespace SimonSaysProject_OfekRon_ItayShachar
         private int level = 1;
         private int countCompBlink = -1;
         private int countClicks = 0;
-        string str;
+        string strStage;
 
         private Win_SimonSays WinnerMessage = new Win_SimonSays();
         private Lose_SimonSays LoseMessage = new Lose_SimonSays();
@@ -117,9 +117,9 @@ namespace SimonSaysProject_OfekRon_ItayShachar
 
             if (countClicks == level)
             {
-                str = "Stage " + level;
-                label1.Text = str;
-                label1.Visible = true;
+                strStage = "Stage " + level;
+                stage.Text = strStage;
+                stage.Visible = true;
                 countClicks = 0;
                 countCompBlink = -1;
 
@@ -159,5 +159,6 @@ namespace SimonSaysProject_OfekRon_ItayShachar
             countFlash++;
         }
 
+        
     }
 }
